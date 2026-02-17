@@ -1,0 +1,17 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.tmp
+
+# IDEs
+.vscode/
+.idea/
+
+# Arduino/Embedded
+*.hex
+*.elf
+.pio/
+
+# Python
+__pycache__/
+*.pyc
