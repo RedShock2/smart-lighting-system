@@ -3,6 +3,7 @@
 
 **Versión:** 1.0  
 **Fecha:** 16 de Febrero del 2026
+
 **Estado:** Borrador Inicial
 
 ---
@@ -219,4 +220,5 @@ Sistema autónomo que complementa la instalación eléctrica existente sin reque
 - **Microcontrolador:** ESP32 (permite WiFi futuro) o Arduino Nano
 - **Sensor:** HC-SR501 (ajustable, económico)
 - **Relé:** Songle SRD-05VDC con optoacoplador
+
 
