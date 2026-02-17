@@ -16,10 +16,10 @@ Sistema embebido de control automático de iluminación basado en detección de 
 
 | Rol | Responsable |
 |-----|-------------|
-| **Project Manager** | Luis Pérez |
-| **Hardware Lead** | [Compañero 1] |
-| **Software Lead** | [Compañero 2] |
-| **Testing & QA** | [Compañero 3] |
+| **Project Manager** | Luis Antonio |
+| **Hardware Lead** | Uriel Everardo |
+| **Software Lead** | Luis Alejandro |
+| **Testing & QA** | Juan Luis |
 
 ## 📂 Estructura
 ```
