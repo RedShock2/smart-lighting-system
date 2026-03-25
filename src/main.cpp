@@ -1,14 +1,14 @@
 // ============================================================
-// main.cpp — Smart Lighting System
-// Versión: 1.0.0 (Sprint 3 — release final)
+// main.cpp -- Smart Lighting System
+// Version: 1.0.0 (Sprint 3 -- release final)
 // Responsable: Luis Alejandro (Software Lead)
 //
-// Lógica del sistema:
+// Logica del sistema:
 //  Hay luz  + Movimiento = LED OFF
 //  Oscuro   + Sin mov    = LED OFF
-//  Oscuro   + Movimiento = LED ON  ✅
+//  Oscuro   + Movimiento = LED ON
 //
-// El LED se apaga automáticamente tras DELAY_OFF ms sin movimiento.
+// El LED se apaga automaticamente tras DELAY_OFF ms sin movimiento.
 // ============================================================
 
 #include <Arduino.h>
@@ -16,11 +16,11 @@
 #include "sensors/pir.h"
 #include "sensors/ldr.h"
 
-// ── Variables de estado ────────────────────────────────────
+// -- Variables de estado --
 static bool          ledState      = false;
 static unsigned long lastPrintTime = 0;
 
-// ── Control del LED ────────────────────────────────────────
+// -- Control del LED --
 void updateLED() {
   bool estaOscuro    = ldrIsDark();
   bool hayMovimiento = pirHasRecentMotion();
@@ -40,7 +40,7 @@ void updateLED() {
   }
 }
 
-// ── Debug Serial ───────────────────────────────────────────
+// -- Debug Serial --
 void printStatus() {
   unsigned long now = millis();
   if (now - lastPrintTime < PRINT_INTERVAL) return;
@@ -54,7 +54,7 @@ void printStatus() {
   Serial.println(ledState ? "ON" : "OFF");
 }
 
-// ── Banner de inicio ───────────────────────────────────────
+// -- Banner de inicio --
 void printBanner() {
   Serial.println();
   Serial.println("=====================================");
@@ -73,7 +73,7 @@ void printBanner() {
   Serial.println();
 }
 
-// ── Setup ──────────────────────────────────────────────────
+// -- Setup --
 void setup() {
   pirInit();
   ldrInit();
@@ -88,7 +88,7 @@ void setup() {
   Serial.println("Sistema listo. Monitoreando...\n");
 }
 
-// ── Loop principal ─────────────────────────────────────────
+// -- Loop principal --
 void loop() {
   pirUpdate();    // Actualiza timestamp de movimiento
   updateLED();    // Aplica logica y actualiza el LED si cambio
