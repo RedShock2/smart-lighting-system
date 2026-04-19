@@ -41,7 +41,7 @@ smart-lighting-system/
 ## 📋 Roadmap
 
 - [x] Definición de requerimientos
-- [ ] Diseño de arquitectura
-- [ ] Prototipo
-- [ ] Desarrollo firmware
+- [x] Diseño de arquitectura
+- [x] Prototipo
+- [x] Desarrollo firmware
 - [ ] Pruebas
