@@ -53,15 +53,18 @@ y app web en tiempo real, desarrollado sobre ESP32 WROOM-32.
 | `GET /status` | Estado del sistema en JSON |
 
 ## 📂 Estructura
+
+```
 smart-lighting-system/
 ├── docs/
-│   ├── architecture/    # SRS
-│   └── overview/        # Overview
+│   ├── architecture/              # SRS
+│   └── overview/                  # Overview
 ├── src/
-│   ├── smart_lighting.ino           # Firmware (sin comentarios)
-│   └── smart_lighting_comentado.ino # Firmware documentado
-├── hardware/            # Esquemas de conexión
-└── tests/               # Pruebas y calibración
+│   ├── smart_lighting.ino         # Firmware
+│   └── smart_lighting_comentado.ino  # Firmware documentado
+├── hardware/                      # Esquemas de conexión
+└── tests/                         # Pruebas y calibración
+```
 
 ## 📋 Roadmap
 - [x] Definición de requerimientos
